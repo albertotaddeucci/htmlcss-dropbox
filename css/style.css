@@ -30,10 +30,7 @@ body{
 }
 
 
-.prova{
-    width: 700px;
-    height: 500px;
-}
+
 
 /* inizio navbar */
 nav{
@@ -94,10 +91,6 @@ nav li a {
 
 /* hero */
 
-/* test */
-.container-big > *{
-    border: 2px dashed black;
-}
 
 
 
@@ -107,39 +100,66 @@ nav li a {
     margin-right: auto;
     margin-left: auto;
     
-    padding-top: 190px;
+    padding-top: calc(195px - 50px);  /*i 50px sono della trasform: translate*/
 
     max-width: 1200px;
 
-    /* test */
+   
     
     
 }
 
-.hero{
-    border: 1px solid red;
-    background-color: lightgreen;
+.hero{    
 
     transform: translateY(50px);
 
 }
 
+.hero h1{
+    padding-bottom: 68px;
+
+    font-size: 60px;
+    font-weight: bold;
+    
+    
+   
+}
+
+
 .row{
     display: flex;
 }
 
-.col-small{
-    width: 30%;
+.row img{
+    width: 100%;
+    object-fit: contain;
     
-    /* test*/
-    border: 1px dashed red;
-    height: 300px;
 }
+
+.col-small{
+    
+    align-items: flex-start;
+    gap: 35px;
+    width: 70%;
+    
+    
+    
+}
+.col-small-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 38px;
+}
+
+.col-small .fa.fa-arrow-down {
+   padding-top: 80px;
+   font-size: 44px;
+}
+
 .col-big{
     flex-grow: 1;
-
-    /* test*/
-    border: 1px dashed red;
+   
 }
 /* fine hero */
 
