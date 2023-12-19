@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* bg colors */
 .bg-white{
     background-color: white;
 }
@@ -11,6 +20,15 @@
 .bg-colored{
     background-color: #b4d0e7;
 }
+
+
+/* buttons */
+.btns{
+    padding: 10px 16px;
+    background-color: #0061ff;
+    color: white;
+}
+
 
 .prova{
     width: 700px;
@@ -26,37 +44,40 @@ nav{
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: 100%;
     padding: 36px 20px;
 
-    /* test */
-    background-color: yellow;
+    
+    background-color: white;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .nav-left{
     display: flex;
     
     gap: 44px;
-    
-    /* test */
-    border: 1px solid black;
+        
 }
 
 .nav-left ul{
     display: flex;
+    align-items: center;
     gap: 44px;
 
     list-style: none;
     color: red;
 }
 
-.nav-right{
-    /* test */
-    border: 1px solid black;
+nav li a {
+    text-decoration: none;
 }
+
+
 .nav-right ul{
     display: flex;
+    align-items: center;
     gap: 44px;
 
     list-style: none;
