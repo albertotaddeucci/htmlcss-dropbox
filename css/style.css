@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+/* inizio navbar */
 nav{
     position: fixed;
     top: 0;
@@ -27,3 +30,52 @@ nav{
     /* test */
     border: 1px solid black;
 }
+
+/* fine navbar */
+
+
+
+
+/* inizio main */
+
+/* test */
+#hero > *{
+    border: 2px dashed black;
+}
+
+
+section{background-color: aqua;}
+
+
+#hero{
+    margin-right: auto;
+    margin-left: auto;
+    
+    padding-top: 190px;
+
+    max-width: 1230px;
+
+    /* test */
+    height: 500px;
+    border: 1px solid red;
+    background-color: lightgreen;
+}
+
+.hero-container{
+    display: flex;
+}
+
+.col-small{
+    width: 400px;
+}
+.col-big{
+    flex-grow: 1;
+
+    /* test*/
+    border: 1px dashed red;
+}
+
+
+
+
+/* fine main */
