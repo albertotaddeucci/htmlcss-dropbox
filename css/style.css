@@ -143,7 +143,7 @@ section{background-color: aqua;}
     display: flex;
 
     padding-top: 158px;
-    padding-bottom: 173px;
+    
 
     
 
@@ -154,4 +154,57 @@ section{background-color: aqua;}
     border: 1px dashed black;
     height: 300px;
 }
+
+.container .tiles{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .tiles .tile{
+    width: 33%;
+
+    /* test */
+    height: 100px;
+    background-color: blueviolet;
+    border: 1px solid white;
+}
+
+
+.container a{
+    display: block;
+    padding-top: 77px;
+    padding-bottom: 158px;
+}
+
+.partner{
+
+    display: flex;
+
+
+
+    /* width: 100vw; */
+    height: 30vh;
+
+    /* test */
+    background-color: white;
+}
+
+.partner .partners-side{
+    
+    /* test */
+    border: 1px solid black;
+    width: 500px;
+    height: 100%;
+    
+}
+
+.partner .partners-center{
+    flex-grow: 1;
+    
+    /* test */
+    border: 1px solid black;
+    
+}
+
+
 /* fine main */
