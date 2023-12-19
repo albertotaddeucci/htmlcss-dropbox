@@ -4,7 +4,18 @@
     box-sizing: border-box;
 }
 
+.bg-white{
+    background-color: white;
+}
 
+.bg-colored{
+    background-color: #b4d0e7;
+}
+
+.prova{
+    width: 700px;
+    height: 500px;
+}
 
 /* inizio navbar */
 nav{
@@ -22,13 +33,32 @@ nav{
 }
 
 .nav-left{
+    display: flex;
+    
+    gap: 44px;
+    
     /* test */
     border: 1px solid black;
+}
+
+.nav-left ul{
+    display: flex;
+    gap: 44px;
+
+    list-style: none;
+    color: red;
 }
 
 .nav-right{
     /* test */
     border: 1px solid black;
+}
+.nav-right ul{
+    display: flex;
+    gap: 44px;
+
+    list-style: none;
+
 }
 
 /* fine navbar */
@@ -42,37 +72,45 @@ nav{
 /* hero */
 
 /* test */
-#hero > *{
+.container-big > *{
     border: 2px dashed black;
 }
 
 
-section{background-color: aqua;}
 
 
-#hero{
+.container-big{
+        
     margin-right: auto;
     margin-left: auto;
     
     padding-top: 190px;
 
-    max-width: 1230px;
+    max-width: 1200px;
 
     /* test */
     
-    border: 1px solid red;
-    background-color: lightgreen;
+    
 }
 
-.hero-container{
+.hero{
+    border: 1px solid red;
+    background-color: lightgreen;
+
+}
+
+.row{
     display: flex;
 }
 
-.hero-small{
-    width: 400px;
+.col-small{
+    width: 30%;
+    
+    /* test*/
+    border: 1px dashed red;
     height: 300px;
 }
-.hero-big{
+.col-big{
     flex-grow: 1;
 
     /* test*/
@@ -84,18 +122,19 @@ section{background-color: aqua;}
     margin-left: auto;
     margin-right: auto;
 
-    max-width: 1040px;
+    max-width: 1000px;
 
     
 }
 
 .container h2{
-    padding-top: 94px;
+    padding-top: 170px;
+    padding-bottom: 65px;
     flex-basis: 100%;
 }
 
 .container .buttons{
-    padding-top: 66px;
+    
     padding-bottom: 54px;
     flex-basis: 100%;
 }
@@ -108,8 +147,8 @@ section{background-color: aqua;}
     
 
     /* test */
-    background-color: lightblue;
-    height: 700px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
 }
 
 .cards .card {
@@ -131,21 +170,9 @@ section{background-color: aqua;}
     
 }
 
-.col-big{
-    width: 100%;
-
-}
-.col-small{
-    width: 415px;
-}
-
-.container.flex{
-    display: flex;
-
-    padding-top: 158px;
+.container.row{
     
-
-    
+    padding-top: 158px;    
 
 }
 
@@ -164,7 +191,7 @@ section{background-color: aqua;}
     width: 33%;
 
     /* test */
-    height: 100px;
+    height: 485px;
     background-color: blueviolet;
     border: 1px solid white;
 }
@@ -172,7 +199,7 @@ section{background-color: aqua;}
 
 .container a{
     display: block;
-    padding-top: 77px;
+    
     padding-bottom: 158px;
 }
 
@@ -180,11 +207,8 @@ section{background-color: aqua;}
 
     display: flex;
 
-
-
     /* width: 100vw; */
-    height: 30vh;
-
+    
     /* test */
     background-color: white;
 }
@@ -193,14 +217,15 @@ section{background-color: aqua;}
     
     /* test */
     border: 1px solid black;
-    width: 500px;
-    height: 100%;
+    width: 30vw;
+    height: 30vh;
     
 }
 
 .partner .partners-center{
     flex-grow: 1;
     
+    /* width: 100%; */
     /* test */
     border: 1px solid black;
     
@@ -251,7 +276,7 @@ footer{
     flex-grow: 1;
 
     border:1px solid white;
-    height: 100px;
+    height: 300px;
 }
 
 .bottombar{
