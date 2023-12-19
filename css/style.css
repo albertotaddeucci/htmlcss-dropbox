@@ -4,3 +4,26 @@
     box-sizing: border-box;
 }
 
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 36px 20px;
+
+    /* test */
+    background-color: yellow;
+}
+
+.nav-left{
+    /* test */
+    border: 1px solid black;
+}
+
+.nav-right{
+    /* test */
+    border: 1px solid black;
+}
