@@ -35,6 +35,11 @@ body{
     color: black;
 }
 
+.btns-alt2{
+    background-color: white;
+    color: black;
+}
+
 
 
 /* inizio navbar */
@@ -178,7 +183,7 @@ a {
     
 }
 
-.container h2{
+#piano-business .container h2{
     padding-top: 170px;
     padding-bottom: 65px;
     
@@ -317,24 +322,24 @@ a {
 }
 
 
-.container.row{
+#parteners .container.row{
     
     padding-top: 158px;    
 
 }
 
 
-.container .row img{
+#parteners .container .row img{
     width: 100%;
     object-fit: contain;
 }
 
-.container.row .col-small h3{
+#parteners .container.row .col-small h3{
     font-size: 20px;
 
 }
 
-.container.row .col-small{
+#parteners .container.row .col-small{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -342,11 +347,11 @@ a {
     padding-left: 40px;
 } 
 
-/* test */
-.container.flex > *{
-    border: 1px dashed black;
-    height: 300px;
+#operations h2{
+    padding: 50px 0px 50px;
 }
+
+
 
 .container .tiles{
     display: flex;
@@ -372,23 +377,32 @@ a {
     
 }
 
-#partners .container{
+/* #teams .container{
+
+} */
+
+
+
+#teams .container{
+
+    margin-top: 60px;
     margin-bottom: 160px;
 }
 
-#partners .container .col-big{
-    width: 60%;
+#teams h2{
+    margin-bottom: 50px;
 }
 
-#partners .container .col-big a{
+#teams .container .col-big{
+    width: 40%;
+}
+
+#teams .container .col-big a{
     text-decoration: underline;
 
 }
 
-
-
-
-.partner{
+.team{
 
     display: flex;
     flex-grow: 1;
@@ -398,7 +412,7 @@ a {
     
 }
 
-.partner .partners-square{
+.team .teams-square{
     display: flex;
     flex-wrap: wrap;
 
@@ -423,43 +437,43 @@ a {
     
 }
 
-.partners-square:first-child .brand:nth-of-type(1){
+.teams-square:first-child .brand:nth-of-type(1){
     background-color: #a2d39b;
 }
 
-.partners-square:first-child .brand:nth-of-type(2){
+.teams-square:first-child .brand:nth-of-type(2){
     background-color: #61082b;
 }
 
-.partners-square:first-child .brand:nth-of-type(3){
+.teams-square:first-child .brand:nth-of-type(3){
     background-color: #0093ce;
 }
 
-.partners-square:first-child .brand:nth-of-type(4){
+.teams-square:first-child .brand:nth-of-type(4){
     background-color: #ff1c1c;
 }
 
 
 
-.partners-square:nth-child(3) .brand:nth-of-type(1){
+.teams-square:nth-child(3) .brand:nth-of-type(1){
     background-color: #d5001f;
 }
 
-.partners-square:nth-child(3) .brand:nth-of-type(2){
+.teams-square:nth-child(3) .brand:nth-of-type(2){
     background-color: #b4d0e7;
 }
 
-.partners-square:nth-child(3) .brand:nth-of-type(3){
+.teams-square:nth-child(3) .brand:nth-of-type(3){
     background-color: #0d2481;
 }
 
-.partners-square:nth-child(3) .brand:nth-of-type(4){
+.teams-square:nth-child(3) .brand:nth-of-type(4){
     background-color: #ffd830;
 }
 
 
 
-.partner .partners-square:nth-child(2){
+.team .teams-square:nth-child(2){
     display: block;
 
     padding: 54px;
@@ -469,12 +483,12 @@ a {
         
 }
 
-.partner .partners-square:nth-child(2) img{
+.team .teams-square:nth-child(2) img{
     
     width: 50%;
 }
 
-.partner .partners-square:nth-child(2) hr{
+.team .teams-square:nth-child(2) hr{
     display: block;
     width: 20%;
 
@@ -482,24 +496,57 @@ a {
     margin: 46px 0px 46px;
 }
 
-.partner .partners-square:nth-child(2) p{
+.team .teams-square:nth-child(2) p{
     margin-bottom: 60px;
 }
 
 
-.container.faq{
+#prova-gratuita .container.row{
+    
+    align-items: center;
+    
+}
+
+
+#prova-gratuita .container.row .col-small{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    
+}
+
+
+
+#prova-gratuita .container.row h2{
+    padding: 140px 0px 140px;
+    
+}
+
+
+
+
+#faq .container{
+    
+    padding: 150px 0px 150px ;
     padding-bottom: 156px;
 }
 
-.container.faq h2{
+#faq .container h2{
     padding-bottom: 80px;
 }
 .domande{
-    padding: 48px ;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
 
-    background-color: lightcoral;
+    padding: 48px ;
+
+    border-top: 1px solid black;
+        
+
+}
+
+.domande:nth-of-type(3){
+    border-bottom: 1px solid black;
 
 }
 
