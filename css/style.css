@@ -372,39 +372,120 @@ a {
     
 }
 
-
-.container a{
-    display: block;
-    
+#partners .container{
+    margin-bottom: 160px;
 }
+
+#partners .container .col-big{
+    width: 60%;
+}
+
+#partners .container .col-big a{
+    text-decoration: underline;
+
+}
+
+
+
 
 .partner{
 
     display: flex;
-
-    /* width: 100vw; */
-    
-    /* test */
-    background-color: white;
-}
-
-.partner .partners-side{
-    
-    /* test */
-    border: 1px solid black;
-    width: 30vw;
-    height: 30vh;
-    
-}
-
-.partner .partners-center{
     flex-grow: 1;
-    
-    /* width: 100%; */
-    /* test */
-    border: 1px solid black;
+
+    width: 100%;
+       
     
 }
+
+.partner .partners-square{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    
+        
+}
+
+.brand{
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.brand img{
+    width: 100%;
+    transform: scale(0.5);
+    object-fit: contain;
+    filter: invert(1);
+
+    
+}
+
+.partners-square:first-child .brand:nth-of-type(1){
+    background-color: #a2d39b;
+}
+
+.partners-square:first-child .brand:nth-of-type(2){
+    background-color: #61082b;
+}
+
+.partners-square:first-child .brand:nth-of-type(3){
+    background-color: #0093ce;
+}
+
+.partners-square:first-child .brand:nth-of-type(4){
+    background-color: #ff1c1c;
+}
+
+
+
+.partners-square:nth-child(3) .brand:nth-of-type(1){
+    background-color: #d5001f;
+}
+
+.partners-square:nth-child(3) .brand:nth-of-type(2){
+    background-color: #b4d0e7;
+}
+
+.partners-square:nth-child(3) .brand:nth-of-type(3){
+    background-color: #0d2481;
+}
+
+.partners-square:nth-child(3) .brand:nth-of-type(4){
+    background-color: #ffd830;
+}
+
+
+
+.partner .partners-square:nth-child(2){
+    display: block;
+
+    padding: 54px;
+
+    overflow: auto;
+      
+        
+}
+
+.partner .partners-square:nth-child(2) img{
+    
+    width: 50%;
+}
+
+.partner .partners-square:nth-child(2) hr{
+    display: block;
+    width: 20%;
+
+    color: grey;
+    margin: 46px 0px 46px;
+}
+
+.partner .partners-square:nth-child(2) p{
+    margin-bottom: 60px;
+}
+
 
 .container.faq{
     padding-bottom: 156px;
