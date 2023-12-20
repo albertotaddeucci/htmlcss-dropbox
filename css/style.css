@@ -27,6 +27,7 @@ body{
     padding: 10px 16px;
     background-color: #0061ff;
     color: white;
+    text-decoration: none;
 }
 
 .btns-alt{
@@ -41,6 +42,11 @@ body{
 }
 
 
+/* fontsize */
+h2{
+    font-size: 34px;
+}
+
 
 /* inizio navbar */
 nav{
@@ -54,7 +60,7 @@ nav{
     align-items: center;
 
     width: 100%;
-    padding: 36px 20px;
+    padding: 34px 20px;
 
     
     background-color: white;
@@ -65,45 +71,40 @@ nav{
     display: flex;
     
     gap: 44px;
-        
+    
 }
 
 .nav-left ul{
     display: flex;
     align-items: center;
     gap: 44px;
-
+    
     list-style: none;
     color: red;
 }
 
-a {
-    text-decoration: none;
-}
 
 
 .nav-right ul{
     display: flex;
     align-items: center;
     gap: 44px;
-
+    
     list-style: none;
-
+    
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
 /* fine navbar */
-
 
 
 
 /* inizio main */
 
-
 /* hero */
-
-
-
-
 
 .container-big{
         
@@ -112,15 +113,11 @@ a {
     
     padding-top: calc(195px - 50px);  /*i 50px sono della trasform: translate*/
 
-    max-width: 1200px;
-
-   
-    
-    
+    max-width: 1200px; 
+        
 }
 
 .hero{    
-
     transform: translateY(50px);
 
 }
@@ -135,26 +132,19 @@ a {
    
 }
 
-
 .row{
     display: flex;
 }
 
-.row img{
-    width: 100%;
-    object-fit: contain;
+
+.col-small{    
+    align-items: flex-start;
+    gap: 35px;
+    
+    width: 30%;   
     
 }
 
-.col-small{
-    
-    align-items: flex-start;
-    gap: 35px;
-    width: 30%;
-    
-    
-    
-}
 .col-small-inner{
     display: flex;
     flex-direction: column;
@@ -163,13 +153,20 @@ a {
 }
 
 .col-small .fa.fa-arrow-down {
-   padding-top: 80px;
-   font-size: 44px;
+    padding-top: 80px;
+    
+    font-size: 44px;
 }
 
 .col-big{
     width: 70%;
-   
+    
+}
+
+.row .col-big img{
+    width: 100%;
+    object-fit: contain;
+    
 }
 /* fine hero */
 
@@ -188,14 +185,22 @@ a {
     padding-bottom: 65px;
     
 
-    font-size: 32px;
+    
 }
 
-.radio-btns{
+
+#piano-business .container .btn-radio{
     display: flex;
-    gap: 30px;
-    padding-bottom: 54px;
+    gap: 40px;
+
 }
+#piano-business .container input{
+    
+    padding-right: 30px;
+    margin-bottom: 50px;
+}
+
+
 
 
 
@@ -205,14 +210,10 @@ a {
     gap: 50px;
     
     
-
-    /* test */
-    background-color: rgb(255, 255, 255);
     
 }
 
-.cards .card {
-    /* flex-grow: 1; */
+.cards .card {    
     width: calc(100% / 3 - 50px / 3 * 2);
     
     border: 2px solid #d9d9db;
@@ -230,16 +231,19 @@ a {
 
 .cards .card .card-header{
     padding: 14px 0px 14px;
-    text-align: center;
+
     border-bottom: 2px solid #d9d9db;
+    text-align: center;
 }
 
 .card-box h3{
     padding-bottom: 26px;
 
+    font-size: 20px;
+
 }
 
-.card-box div:nth-child(3){
+.card-box div:nth-of-type(2){
     padding-top: 20px;
     padding-bottom: 60px;
 
@@ -275,13 +279,12 @@ a {
     margin-top: 35px;
     margin-bottom: 55px;
 
-    color: red;
+    color: #d9d9db;
 }
 
 
 
-.card-box h4{
-    
+.card-box h4{    
     padding-bottom: 38px;
 }
 
@@ -298,27 +301,25 @@ a {
 .cards .card:last-child .card-box{
     display: flex;
     flex-direction: row;  
-    gap: 70px;
-    
-    
+    gap: 70px;     
        
        
 }
 
 .cards .card:last-child .card-box div:nth-of-type(2){
-    color: black;
     padding-top: 50px ;
     padding-bottom: 0px;
     
+    color: black;
 }
 
 .cards .card:last-child .card-box a{
     width: 30%;
     display: flex;
     justify-content: center;
+
     margin-top: 0px;
-    
-    
+        
 }
 
 
@@ -329,9 +330,11 @@ a {
 }
 
 
-#parteners .container .row img{
+#parteners .container.row img{
     width: 100%;
-    object-fit: contain;
+    /* transform: scale(0.8); */
+    
+    
 }
 
 #parteners .container.row .col-small h3{
@@ -340,6 +343,8 @@ a {
 }
 
 #parteners .container.row .col-small{
+    width: 50%;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -348,7 +353,8 @@ a {
 } 
 
 #operations h2{
-    padding: 50px 0px 50px;
+    padding: 170px 0px 80px;
+    
 }
 
 
@@ -385,19 +391,21 @@ a {
 
 #teams .container{
 
-    margin-top: 60px;
+    margin-top: 220px;
     margin-bottom: 160px;
 }
 
 #teams h2{
-    margin-bottom: 50px;
+    margin-bottom: 65px;
+    
 }
 
 #teams .container .col-big{
-    width: 40%;
+    width: 60%;
 }
 
 #teams .container .col-big a{
+    color: blue;
     text-decoration: underline;
 
 }
@@ -519,7 +527,8 @@ a {
 
 #prova-gratuita .container.row h2{
     padding: 140px 0px 140px;
-    
+
+        
 }
 
 
@@ -527,7 +536,7 @@ a {
 
 #faq .container{
     
-    padding: 150px 0px 150px ;
+    padding: 140px 0px 140px ;
     padding-bottom: 156px;
 }
 
