@@ -470,6 +470,8 @@ nav a {
     display: flex;
     width: 50%;
     height: 50%;
+
+    transition: 0.3s;
 }
 
 .brand img{
@@ -483,6 +485,7 @@ nav a {
 
 .teams-square:first-child .brand:nth-of-type(1){
     background-color: #a2d39b;
+    border: 20px solid #d1e9cd;
 }
 
 .teams-square:first-child .brand:nth-of-type(2){
@@ -515,7 +518,15 @@ nav a {
     background-color: #ffd830;
 }
 
+.brand:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 
+.brand:hover img{
+    filter: invert(0);
+   
+}
 
 .team .teams-square:nth-child(2){
     display: block;
